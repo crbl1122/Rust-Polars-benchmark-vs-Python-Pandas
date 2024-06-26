@@ -13,7 +13,11 @@ The Rust Polars solution proved to be **10x faster** for data processing than Py
 
 **Python/Pandas:**
 - Processing duration: **47.28 seconds**
+
 - Transformed data writing on disk duration: **4.57 seconds**
+
+The data is processed in parallel with all CPU's using lazy API:
+![Screenshot lazy API](https://github.com/crbl1122/Rust-Polars-benchmark-vs-Python-Pandas/assets/30111494/a87e0706-7270-484f-9086-9034d5e11120)
 
 About the source parquet file I used for benchmarking: It contains a dataframe generated in Python/Pandas with 	**10.000.000 rows** and three columns: one string column "random_letters" which has **1.000.000 unique combinations of 5 letters** and two random generated float columns. I saved the dataframe as Parquet file and I used Rust to read and process it. The file size is 234Mb.
 
