@@ -29,7 +29,7 @@ Sample of source dataframe with 10.000.000 rows and 1.000.000 unique combination
 
   random_letters	"0"	"1"
   --------------  --- ---
-0	NGOXW	0.496714	-0.138264
+0	NGOXW	0.496714	-0.138263
 
 1	OVSPI	0.647689	1.523030
 
