@@ -24,7 +24,7 @@ About the source parquet file I used for benchmarking: It contains a dataframe g
 For benchmarking I created a function in Rust which does the following transformation steps:
 - Aggregate each numerical column using "random_letters" column and generate two Polars dataframes, one for each aggregated column.
 - Create the final Polars dataframe by joining the two aggregated dataframes using "random_letters" as key.
-
+###
 Sample of source dataframe with 10.000.000 rows and 1.000.000 unique combinations of letters:
 
   random_letters	"0"	"1"
